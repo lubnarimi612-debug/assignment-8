@@ -83,7 +83,7 @@ const page = async ({ searchParams }) => {
                     {book.description}
                   </p>
 
-                  <Link href={`/books/${book.id}`}>
+                  <Link href={`/allbooks/${book.id}`}>
                     <button className="w-full bg-gray-900 hover:bg-amber-950 text-white font-medium py-3 rounded-xl transition-colors duration-300 flex items-center justify-center gap-2 hover:cursor-pointer">
                       View Details
                       <FaArrowRight />
