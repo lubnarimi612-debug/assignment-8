@@ -1,8 +1,10 @@
 "use client"
 import React from 'react';
 import { BookOpen, Home, Library, User, ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 
 const Navbar = () => {
+  
   return (
     <div className="navbar bg-base-300 mx-auto shadow-sm px-4 md:px-8 border-b border-gray-100">
       {/* Logo Section */}
@@ -22,19 +24,19 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-4 font-medium">
           <li className="">
-            <a className="flex items-center gap-1.5 py-4 hover:text-green-800">
+            <Link href="/" className="flex items-center gap-1.5 py-4 hover:text-green-800">
               <Home size={18} /> Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="flex items-center gap-1.5 py-4  hover:text-green-800">
+            <Link href="/allbooks" className="flex items-center gap-1.5 py-4  hover:text-green-800">
               <Library size={18} /> All Books
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="flex items-center gap-1.5 py-4  hover:text-green-800">
+            <Link href="/profile" className="flex items-center gap-1.5 py-4  hover:text-green-800">
               <User size={18} /> My Profile
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
