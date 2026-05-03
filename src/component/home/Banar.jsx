@@ -2,6 +2,7 @@ import React from "react";
 import banarImg from "@/asset/image/banar.jpeg";
 import Image from "next/image";
 import { BookOpen } from "lucide-react";
+import Link from "next/link";
 // import { FiSearch } from "react-icons/fi";
 
 const Banar = () => {
