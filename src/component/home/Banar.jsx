@@ -35,10 +35,13 @@ const Banar = () => {
               <span className="text-green-500">Borrow , read and discover your next favorite book </span>
             </p>
 
+               <button>
+
             <Link href="/allbooks" className="mt-8 bg-green-800 hover:bg-green-950 text-white px-8 py-3 rounded-md flex items-center gap-2 text-lg transition-all duration-300 shadow-lg">
               {/* <FiSearch size={20} /> */}
               Browse Now
             </Link>
+            </button>
           </div>
         </div>
       </div>
